@@ -105,15 +105,15 @@ public class atm {
             System.out.println(active_user);
 
             // Menu
-            System.out.print("What would you like to do?");
-            System.out.print("1. Check Balance");
-            System.out.print("2. Deposit");
-            System.out.print("3. Withdraw");
-            System.out.print("4. Exit");
+            System.out.println("What would you like to do?");
+            System.out.println("1. Check Balance");
+            System.out.println("2. Deposit");
+            System.out.println("3. Withdraw");
+            System.out.println("4. Exit");
 
             Scanner sc4 = new Scanner(System.in);
             System.out.println("Option: ");
-            Int choice = sc4.nextInt();
+            int choice = sc4.nextInt();
 
             if (choice == 1) {
                 System.out.print("Balance: ");
@@ -122,13 +122,13 @@ public class atm {
             } else if (choice == 2) {
                 Scanner sc5 = new Scanner(System.in);
                 System.out.println("Amount to deposit: ");
-                Int amount = sc5.nextInt();
+                int amount = sc5.nextInt();
                 active_account.deposit(amount);
 
             } else if (choice == 3) {
                 Scanner sc6 = new Scanner(System.in);
                 System.out.println("Amount to withdraw: ");
-                Int amount = sc6.nextInt();
+                int amount = sc6.nextInt();
                 active_account.withdraw(amount);
 
             } else if (choice == 4) {
